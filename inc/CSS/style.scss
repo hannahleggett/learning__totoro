@@ -1,0 +1,20 @@
+
+$primary: #444444;
+$secondary: #ee4747;
+$tertiary: #7751df;
+
+body{
+    margin: 0;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        
+        @import 'components/header';
+        @import 'components/main';
+        @import 'components/footer';
+
+    }
+
+}

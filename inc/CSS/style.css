@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body .container header {
+  background-color: #444444;
+  width: 100%;
+  height: 64px;
+}
+body .container header ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container header ul li {
+  list-style: none;
+  padding: 10px;
+  text-align: right;
+}
+body .container main {
+  background-color: #7751df;
+  width: 100%;
+  flex: 1;
+}
+body .container footer {
+  background-color: #ee4747;
+  width: 100%;
+  height: 64px;
+}
+
+/*# sourceMappingURL=style.css.map */
