@@ -1,5 +1,25 @@
-main{
+main {
     background-color: $tertiary;
     width: 100%;
     flex: 1;
+
+    ul {
+        list-style: none;
+        color: $textWhite;
+        text-align: center;
+
+        li {
+            h2 {
+            font-size: 80px;
+            line-height: 120px;
+            margin: 60px 0px 0px 0px; 
+            }
+            p{
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 0px;
+            }
+        }
+        
+    }
 }

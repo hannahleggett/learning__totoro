@@ -19,11 +19,27 @@ body .container header ul li {
   list-style: none;
   padding: 10px;
   text-align: right;
+  color: white;
 }
 body .container main {
   background-color: #7751df;
   width: 100%;
   flex: 1;
+}
+body .container main ul {
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+body .container main ul li h2 {
+  font-size: 80px;
+  line-height: 120px;
+  margin: 60px 0px 0px 0px;
+}
+body .container main ul li p {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0px;
 }
 body .container footer {
   background-color: #ee4747;

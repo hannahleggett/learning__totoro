@@ -2,6 +2,7 @@
 $primary: #444444;
 $secondary: #ee4747;
 $tertiary: #7751df;
+$textWhite: white;
 
 body{
     margin: 0;
@@ -15,6 +16,7 @@ body{
         @import 'components/main';
         @import 'components/footer';
 
+        
     }
 
 }
