@@ -1,19 +1,27 @@
 <?php
 
-//connection
-$mysqli = new mysqli("localhost","portfolioroot","password","portfolioproject");
+include 'classes/db.php';
+include 'classes/render.php';
 
-if ($mysqli -> connect_errno) {
-  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
-  exit();
-}
+$id = 1;
+
+if(isset($_GET['id']) && !empty($_GET['id'])){
+    $id = $_GET['id'];
+} 
+
+//connection
+$bob = new db; 
+$rendercontent = new render;
 
 //get data
-$sql = "SELECT title, description FROM projects";
+$project = $bob->query($id, 'projects');
+$menu = $bob->all('projects');
 
-$result = $mysqli -> query($sql);
+//get data - video
+$video = $bob->query($project[5], 'videos');
 
 //$mysqli -> close();
+
 ?>
 
 

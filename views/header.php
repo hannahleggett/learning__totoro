@@ -1,7 +1,15 @@
 <header>
     <ul>
-        <li>Totoro</li>
-        <li>Spirited Away</li>
-        <li>Cat Returns</li>
+        <?php
+            
+
+            foreach($menu as $menuitem)
+            {
+                echo $rendercontent->menu($menuitem['id'], $menuitem['title']);
+            }
+
+
+        ?>
+
     </ul>
 </header>
