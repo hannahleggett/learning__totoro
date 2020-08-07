@@ -28,7 +28,10 @@ $video = $bob->query($project[5], 'videos');
 <head>
     <title>Totoro</title>
     <link href="inc/CSS/style.css" rel="stylesheet" type="text/css"></link>
-    <link href="inc/JS/app.js" rel="script" type="text/javasript"></link>
+
+    //flickety
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
 </head>
 
 <body>
@@ -47,5 +50,7 @@ $video = $bob->query($project[5], 'videos');
         ?>
 
     </article>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link href="inc/JS/app.js" rel="script" type="text/javasript"></link>
 </body>
 
